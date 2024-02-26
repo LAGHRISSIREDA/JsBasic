@@ -1,3 +1,4 @@
+// import minus,{PI,add} from './Utils.js'
 // let str = `my name is reda and i know that you want ti build this in our case`
 // let check = str.toLocaleLowerCase().includes('reda');
 // console.log('check:', check);
@@ -28,7 +29,7 @@
 
 // Map Function
 
-let arr = [1,2,3,4,5,45,56,34];
+// let arr = [1,2,3,4,5,45,56,34];
 // let arr2 = arr.map((item)=> item*item);
 // console.log('arr:', arr);
 // console.log('arr2:', arr2);
@@ -63,9 +64,51 @@ let arr = [1,2,3,4,5,45,56,34];
 // console.log('numberArray:', numberArray);
 // console.log('newArray:', newArray);
 
-let numberArray = [100,2,5,6,7];
-let number = numberArray.reduce(function(total,item,index,array){
-    return total*item
-},1);
+// let numberArray = [100,2,5,6,7];
+// let number = numberArray.reduce(function(total,item,index,array){
+//     return total*item
+// },1);
 
-console.log('number:', number);
+// console.log('number:', number);
+
+// Foreach
+
+// numberArray.forEach(element => {
+//     console.log('element:', element);
+// });
+
+
+// check is success
+// function checkIsSuccess(data){
+//     return new Promise(function(resolve,reject){
+//         if(data === 'success'){
+//             return resolve('Successfully Executed');
+//         }else{
+//             return reject('Unsuccessfully Executed');
+//         }
+//     })
+// }
+
+// checkIsSuccess('').then(function(result){
+//     console.log('result:', result);
+// }).catch(function(error){
+//     console.error('error:', error);
+// })
+
+// fetch('https://pokeapi.co/api/v2/pokemon/ditto').then(function(result){
+//     console.log('result:', result);
+//     return result.json();
+// }).then(function(response){
+//     console.log('response:', response);
+// })
+
+
+
+
+
+// console.log('PI:'+ PI);
+// console.log('minus:', minus(5,4));
+
+import * as Utils from './Utils.js'
+
+console.log(Utils.PI);
