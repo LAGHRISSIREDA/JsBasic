@@ -1,3 +1,28 @@
+// let elem = document.querySelector('div');
+// let elem1 = document.querySelectorAll('div');
+// console.log('elem:', elem);
+// console.log('elem:1', elem1);
+
+// Array.from(elem1).forEach((item)=>{
+//     item.style.color='green'
+// })
+
+// let btn = document.querySelector('button');
+// btn.addEventListener('click',()=>{
+//     console.log('salamo alalykooume:');
+// })
+
+document.addEventListener("mousemove",handler)
+function handler(){
+    document.querySelector(".demo").innerHTML = Math.random();
+    console.log('Into handler function')
+}
+
+function removeHandler(){
+    document.removeEventListener("mousemove",handler)
+}
+
+
 // import minus,{PI,add} from './Utils.js'
 // let str = `my name is reda and i know that you want ti build this in our case`
 // let check = str.toLocaleLowerCase().includes('reda');
@@ -109,6 +134,6 @@
 // console.log('PI:'+ PI);
 // console.log('minus:', minus(5,4));
 
-import * as Utils from './Utils.js'
+// import * as Utils from './Utils.js'
 
-console.log(Utils.PI);
+// console.log(Utils.PI);
