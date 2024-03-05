@@ -12,15 +12,15 @@
 //     console.log('salamo alalykooume:');
 // })
 
-document.addEventListener("mousemove",handler)
-function handler(){
-    document.querySelector(".demo").innerHTML = Math.random();
-    console.log('Into handler function')
-}
+// document.addEventListener("mousemove",handler)
+// function handler(){
+//     document.querySelector(".demo").innerHTML = Math.random();
+//     console.log('Into handler function')
+// }
 
-function removeHandler(){
-    document.removeEventListener("mousemove",handler)
-}
+// function removeHandler(){
+//     document.removeEventListener("mousemove",handler)
+// }
 
 
 // import minus,{PI,add} from './Utils.js'
@@ -137,3 +137,21 @@ function removeHandler(){
 // import * as Utils from './Utils.js'
 
 // console.log(Utils.PI);
+
+
+
+
+// SetTimeout
+let timeID = window.setTimeout(()=>{
+    console.log('test')
+},5000)
+console.log('timeId:', timeID);
+// clearTimeout(timeID)
+
+// setInterval
+
+let setIntervalId = window.setInterval(()=>{
+    console.log('hello');
+},5000)
+
+clearInterval(setIntervalId)
